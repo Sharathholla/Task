@@ -1,0 +1,23 @@
+--- 
+apiVersion: apps/v1
+kind: Deployment
+labels: 
+  app: main_go
+metadata: "name:main_go-deployment"
+spec: 
+  replicas: 2
+  selector: 
+    matchLabels: 
+      app: main_go
+  template: 
+    metadata: 
+      labels: 
+        app: main_go
+    spec: 
+      containers: 
+        - 
+          image: "goimg:latest"
+          name: main_go
+          ports: 
+            - 
+              containerPort: 80
