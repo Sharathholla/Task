@@ -8,4 +8,4 @@ kubectl get deployments
 
 **To Run the Loadbalancer Service File**
 
-kubectl apply - Loadbalancer.yaml
+kubectl apply -f Loadbalancer.yaml
