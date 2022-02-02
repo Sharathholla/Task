@@ -4,11 +4,7 @@ RUN mkdir /build
 
 WORKDIR /build
 
-
-
 COPY main.go ./build/
-
-
 
 RUN cd ./build/ && go mod init && go build -o mybinary
 
